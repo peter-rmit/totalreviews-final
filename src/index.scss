@@ -1,0 +1,226 @@
+// 3rd-party Plugins
+@import "~highlight.js/styles/googlecode.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+// Theme Styles
+@import "./_metronic/_assets/sass/style.react.scss";
+
+// Default Layout themes
+// @import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// @import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+
+// Header themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/base/dark.scss";
+
+// Header Menu themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/dark.scss";
+
+// Brand themes
+// .brand-dark {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+// }
+// // Light
+// .brand-light {
+//   @import "./_metronic/_assets/sass/themes/layout/brand/light.scss";
+// }
+
+// Aside themes
+// Dark
+//@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+// Light
+// @import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+// .example-highlight {
+//   padding: 0rem 1.5rem 1.75rem !important;
+// }
+
+.example-highlight > pre {
+  background: none transparent !important;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+  code {
+    overflow-y: auto;
+    display: block;
+
+    span {
+      background: none transparent !important;
+    }
+  }
+}
+
+.json > pre {
+  background: none #fff !important;
+}
+
+.example-code > .json {
+  background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+  width: 100%;
+  max-width: 45px;
+  height: 45px;
+}
+
+.react-bootstrap-table {
+  overflow-x: auto;
+}
+
+.react-bootstrap-table {
+  th {
+    outline: none;
+
+    &.sortable {
+      .svg-icon-sort {
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .svg-icon-sort {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .table.table-head-custom thead tr {
+    .sortable-active {
+      color: $primary !important;
+    }
+  }
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.focus {
+  border-color: red;
+}
+.focus.focus {
+  border-color: red;
+}
+
+.client-reviews {
+  height: 440px;
+  overflow-y: scroll;
+}
+
+.all-reviews {
+  height: 640px;
+  overflow-y: scroll;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  font-family: "Poppins";
+}
+
+.close {
+  color: black !important;
+  padding: 2%;
+  font-size: 14px;
+}
+
+.close:hover {
+  color: #182546;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.actions:hover {
+  cursor: pointer;
+}
+
+.disable-pointer:hover {
+  cursor: text;
+}
+
+.error-color {
+  color: red;
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.csv_button {
+  display: flex;
+}
+
+@include media-breakpoint-down(md) {
+  .pagination-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .paginate {
+    transform: translateY(6px) !important;
+    width: max-content;
+  }
+  .add-user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-42px);
+  }
+  .tools {
+    width: 100% !important;
+    transform: translateY(51px);
+  }
+  .filters {
+    width: 100% !important;
+  }
+  .user_manage_tools {
+    width: 100% !important;
+    transform: translateY(92px);
+  }
+  .csv_button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(-42px) !important;
+  }
+  .manage_add_user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-36px);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .user_manage_tools {
+    width: 100% !important;
+    transform: translateY(110px);
+  }
+}
+
+@media screen and (min-width: 442px) and(max-width:767px) {
+  .user_manage_tools {
+    width: 100% !important;
+    transform: translateY(92px);
+  }
+}
